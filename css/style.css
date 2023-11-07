@@ -8,6 +8,11 @@
 /* ****************************
             UTILITY
   *****************************  */
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
 
 
@@ -34,6 +39,7 @@
     width: calc(100% - 50px);
     height: 100%;
     background-color: blueviolet;
+    overflow-y: auto;
   }
 
   /* HEADER */
@@ -43,6 +49,8 @@
     background-color: rgba(0, 0, 0, 0.492);
   }
 
+  /* MAIN */
+ 
     
 /* ****************************
         MAIN   MENU SECTION
@@ -56,7 +64,7 @@
   }
 
   ul{
-    width: 538px;
+    width: 100%;
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +73,7 @@
 
   li{
     display: inline-block;
-    width: 134px;
+    width: calc(100% / 4);
     background-color: red;
     border: 1px solid black;
   }
@@ -74,17 +82,36 @@
   /* ****************************
       MAIN  RECENTLY SECTION
   *****************************  */
-
+  .recently .col{
+    width: calc(100% / 2);
+    height: 269px;
+    border: 1px solid black;
+    background-color: aquamarine;
+  }
 
 
    /* ****************************
       MAIN  CREATED FOR SECTION
   *****************************  */
-
+  .created-for .col{
+    width: calc(100% / 2);
+    height: 269px;
+    border: 1px solid black;
+    background-color: rgb(255, 238, 7);
+  }
+  
 
     /* ****************************
       MAIN  POPULAR SECTION
   *****************************  */
+  .popular .col{
+    width: calc(100% / 2);
+    height: 269px;
+    border: 1px solid black;
+    background-color: rgb(7, 255, 114);
+    
+  }
+
 
 
    /* ****************************
@@ -103,10 +130,37 @@
   *****************************  */
 
   /* TABLET */
+  @media screen and (min-width: 576px) {
 
-
+    .recently .col,
+    .popular .col,
+    .created-for .col{
+        width: calc(100% / 4);
+      }
+      nav{
+        width: 200px;
+       
+    
+      }
+      .container{
+        width: calc(100% - 200px);
+      }
+        
+       
+    
+  }
+ 
 
   /* DESKTOP */
+  @media screen and (min-width: 992px) {
+
+    .recently .col,
+    .popular .col,
+    .created-for .col{
+     width: calc(100% / 6);
+    }
+    
+  }
 
 
 
