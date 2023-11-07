@@ -21,7 +21,7 @@
     display: flex;
   }
 
-  /* nav */
+  /* NAV */
   nav{
     width: 50px;
     height: 100%;
@@ -29,19 +29,62 @@
 
   }
 
-  /* container */
+  /* CONTAINER */
   .container{
     width: calc(100% - 50px);
     height: 100%;
     background-color: blueviolet;
   }
 
-  /* header */
+  /* HEADER */
   header{
     width: 100%;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.492);
   }
+
+    
+/* ****************************
+        MAIN   MENU SECTION
+  *****************************  */
+  
+
+  .main-container{
+    width: 100%;
+    background-color: bisque;
+    margin-top: 20px;
+  }
+
+  ul{
+    width: 538px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li{
+    display: inline-block;
+    width: 134px;
+    background-color: red;
+    border: 1px solid black;
+  }
+
+  
+  /* ****************************
+      MAIN  RECENTLY SECTION
+  *****************************  */
+
+
+
+   /* ****************************
+      MAIN  CREATED FOR SECTION
+  *****************************  */
+
+
+    /* ****************************
+      MAIN  POPULAR SECTION
+  *****************************  */
 
 
    /* ****************************
@@ -54,6 +97,16 @@
   }
 
 
+
+/* ****************************
+        RESPONSIVE SOLUTIONS 
+  *****************************  */
+
+  /* TABLET */
+
+
+
+  /* DESKTOP */
 
 
 
