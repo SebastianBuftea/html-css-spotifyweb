@@ -8,6 +8,16 @@ body{
 }
 
 
+h3, h2{
+  color: white;
+}
+
+h3{
+  font-size:small;
+  font-weight: bolder;
+}
+
+
 /* ****************************
             UTILITY
   *****************************  */
@@ -23,9 +33,23 @@ body{
 
   .space-between{
     justify-content: space-between;
-    
-
   }
+
+  .show{
+    display: inline-block;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .margintop-20{
+    margin-top: 20px;
+  }
+  .margin10{
+    margin:10px 0;
+  }
+
 
 
 
@@ -44,21 +68,35 @@ body{
     width: 50px;
     height: 100%;
     background-color: black;
-
+    color: grey;
   }
 
+  .text, #crea{
+    font-size: small;
+  }
 
-  .icons, .user{
-    width: 50px;
-    text-align: center;
+  .text{
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.icon-text{
+  margin-top: 5px;
+}
+
+
+
+.icons, .user{
+  width: 100%;
+  text-align: center;
    
 
-  }
+}
 
-  .icons img,
-  .user img {
-    width: 25px;
-    margin-top: 5px;
+ .icons img,
+ .user img {
+   width: 25px;
+   vertical-align: middle;
   }
 
   #gray-circle{
@@ -70,6 +108,37 @@ body{
     border-radius: 50%;
     margin: 20px 0 15px 10px;
   }
+
+  .add{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+
+  .icons ul{
+    list-style-type: none;
+    height: 25vh;
+    overflow-y: auto;
+
+  }
+
+  .icons li{
+    line-height: 30px;
+    font-size: small;
+  }
+
+  hr{
+    border: 1px solid grey;
+    width: 100%;
+  }
+
+ 
  
 
   /* CONTAINER */
@@ -87,6 +156,7 @@ body{
     background-color: rgba(0, 0, 0, 0.492);
   }
 
+
   /* MAIN */
  
     
@@ -100,7 +170,7 @@ body{
     margin-top: 20px;
   }
 
-  ul{
+  .menu ul{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +179,7 @@ body{
     
   }
 
-  li{
+  .menu li{
     display: inline-block;
     width: calc(100% / 4);
     border: 1px solid black;
@@ -177,19 +247,49 @@ body{
     .created-for .col{
         width: calc(100% / 4);
       }
+
       nav{
         width: 200px;
-       
-    
       }
+
       .container{
         width: calc(100% - 200px);
       }
 
-      li{
+      .menu li{
         width: calc(100% / 3);
       }
 
+      .show{
+        display:none;
+      }
+
+      .hidden{
+        display: inline-block;
+      }
+
+      .logo img:nth-of-type(2){
+        width: 125px;
+      }
+
+      .logo{
+        margin-bottom: 15px;
+      }
+
+      .icons, .user{
+        text-align: left;
+        padding:10px;
+      }
+
+      #gray-circle{
+        margin-left: 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      
+
+    
       
         
        
@@ -206,14 +306,14 @@ body{
      width: calc(100% / 6);
     }
     
-    li{
+    .menu li{
         width: calc(100% / 6);
       }
 
-     ul{
+    .menu ul{
         width: 700px;
         margin: 0 auto;
-     } 
+    } 
     
   }
 

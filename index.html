@@ -11,29 +11,67 @@
 
     <!-- CREATED A UPPER SECTION CONTAINER -->
     <section id="upper">
+
         <!-- NAV BAR LEFT -->
         <nav>
-
             <div class="row column space-between">
-                
-                <div class="icons">
-                    <img src="./spotify/img/logo-small.svg" alt="">
-                    <img src="./spotify/img/home.svg" alt="">
-                    <img src="./spotify/img/search.svg" alt="">
-                    <img src="./spotify/img/libreria.svg" alt="">
-                </div>
 
+                <!-- icons and playlist zone  -->
+                <div class="icons">
+
+                    <div class="logo">
+                        <img src="./spotify/img/logo-small.svg" alt="" class="show">
+                        <img src="./spotify/img/logo.svg" alt="" class="hidden">
+                    </div>  
+                    
+                    <div class="icon-text"> 
+                        <img src="./spotify/img/home.svg" alt="">
+                        <span class="hidden text">Home</span>
+                    </div> 
+
+                    <div class="icon-text">
+                        <img src="./spotify/img/search.svg" alt=""> 
+                        <span class="hidden text">Cerca</span>
+                    </div> 
+
+                    <div class="icon-text">
+                        <img src="./spotify/img/libreria.svg" alt="">
+                        <span class="hidden text">La tua libreria</span>
+                    </div>
+
+                    <div class="hidden ">
+                        <h3 class="margintop-20">PLAYLIST</h3>
+                        <div class="margin10">
+                            <div class="add"> + </div>
+                            <span id="crea">Crea Playlist</span>
+                        </div>
+                        
+                         <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                         </ul>                         
+                    </div>             
+                </div>  
+
+                <!-- user zone -->
                 <div class="user">
                     <img src="./spotify/img/download.svg" alt="">
+                    <span class="hidden text">Installa App</span>
+
+                    <hr class="hidden ">
+
                     <div id="gray-circle">
                         <img src="./spotify/img/profile.svg" alt="">
-                    </div>
-                    
+                    </div> 
+                    <span class="hidden text"><h3>John Doe</h3></span>                   
                 </div>
-             </div>
-            
-
-
+                
+             </div>          
         </nav>
 
         <div class="container">
