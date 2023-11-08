@@ -16,13 +16,16 @@ h3{
   font-size:small;
   font-weight: bolder;
 }
+h4{
+  font-size: xx-small;
+}
 
 
 /* ****************************
             UTILITY
   *****************************  */
   .row{
-    display: flex;
+     display: flex;
      flex-wrap: wrap; 
      height: 100%;
   }
@@ -49,8 +52,15 @@ h3{
   .margin10{
     margin:10px 0;
   }
+  .margleft5{
+    margin-left: 5px;
+  }
 
+  .pad10{
+    padding: 10px;
+  }
 
+  
 
 
 
@@ -230,10 +240,72 @@ h3{
   footer{
     height: 75px;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(39, 39, 39);
+  }
+
+ 
+  footer .row{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .player{
+    align-items: center;
+    display: flex;
+    align-items: center;
+
+  }
+
+  footer img{
+    width: 40px;
+  }
+
+  .player:nth-of-type(2){
+    flex-direction: column;
+  }
+
+  .player i{
+    margin: 10px;
+  }
+
+  .player:last-of-type i{
+    margin: 5px;
   }
 
 
+  .line,
+  .volume{
+    display: inline-block;
+    
+  }
+ .line #one{
+    width: 10vw;
+    border: 1px solid white;
+  }
+  .line #two{
+    width: 20vw;
+  }
+
+  .volume #first{
+    width: 5vw;
+    border: 1px solid white;
+
+  }
+  .volume #second{
+    width: 10vw;
+  }
+
+  .whitecircle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+   
+  }
+  
+  .relative{
+    position: relative;
+  }
 
 /* ****************************
         RESPONSIVE SOLUTIONS 
@@ -251,6 +323,11 @@ h3{
       nav{
         width: 200px;
       }
+
+      .pad20{
+        padding: 20px;
+      }
+    
 
       .container{
         width: calc(100% - 200px);
@@ -278,7 +355,6 @@ h3{
 
       .icons, .user{
         text-align: left;
-        padding:10px;
       }
 
       #gray-circle{
