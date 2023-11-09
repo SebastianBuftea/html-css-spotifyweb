@@ -24,6 +24,7 @@ h4{
 h5{
   color: gray;
   margin-top: 5px;
+  font-size: x-small;
 }
 
 
@@ -34,8 +35,8 @@ h5{
      display: flex;
      flex-wrap: wrap; 
      height: 100%;
-  }
-
+    }
+    
   .column{
     flex-direction: column;
   }
@@ -66,15 +67,10 @@ h5{
     padding: 10px;
   }
 
- .col{
-  margin-top: 20px;
  
 
- }
-
-  
-
-
+ 
+ 
 
   /* ****************************
            UPPER SECTION
@@ -106,19 +102,22 @@ h5{
   margin-top: 5px;
 }
 
-
-
 .icons, .user{
   width: 100%;
   text-align: center;
-   
-
 }
 
- .icons img,
- .user img {
+.logo img:nth-of-type(2){
+  filter: opacity(100%);
+}
+.logo img:nth-of-type(1){
+  filter: opacity(100%);
+}
+
+ nav img {
    width: 25px;
    vertical-align: middle;
+    filter: opacity(40%); 
   }
 
   #gray-circle{
@@ -161,6 +160,7 @@ h5{
   }
 
  
+  
  
 
   /* CONTAINER */
@@ -193,13 +193,29 @@ h5{
   }
 
 
-  /* MAIN */
+ 
  
     
 /* ****************************
-        MAIN   MENU SECTION
+        MAIN  
   *****************************  */
-  
+  main .row{
+    gap: 10px;
+ }
+
+ main h3{
+  margin-top: 10px;
+ }
+
+ main img{
+  width: 100%;
+}
+
+  main .col{
+  width: calc(100% / 2 - 10px);
+  margin-top: 20px;
+  text-align: center;
+  }
 
   .main-container{
     width: 100%;
@@ -218,45 +234,20 @@ h5{
   .menu li{
     display: inline-block;
     width: calc(100% / 4);
-    font-size: small;
+    font-size: x-small;
     margin: 10px 0 10px 0;
     font-weight: bolder;
     color: grey;
   }
 
   
-  /* ****************************
-      MAIN  RECENTLY SECTION
-  *****************************  */ 
-  
-  main img{
-    width: 100%;
-  }
-
-  .recently .col{
-    width: calc(100% / 2);
-    height: 269px;
-    border: 1px solid black;
-    background-color: aquamarine;
-  }
 
 
   .relative{
     position: relative;;
   }
 
-  .play{
-    display: none;
-  }
-  .no-play{
-    display: block;
-  }
-  .copertina:hover .play{
-  display: block;
-  }
-  .copertina:hover .no-play{
-    display: none;
-  }
+  
 
    .backgroundhover{
    display: block;
@@ -267,7 +258,7 @@ h5{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+   height: 100%; 
     
    }
 
@@ -275,26 +266,10 @@ h5{
     font-size: 50px;
    }
 
-   /* ****************************
-      MAIN  CREATED FOR SECTION
-  *****************************  */
-  .created-for .col{
-    width: calc(100% / 2);
-    height: 269px;
-    border: 1px solid black;
-    background-color: rgb(255, 238, 7);
-  }
+
   
 
-    /* ****************************
-      MAIN  POPULAR SECTION
-  *****************************  */
-  .popular .col{
-    width: calc(100% / 2);
-    height: 269px;
-    border: 1px solid black;
-    background-color: rgb(7, 255, 114);
-  }
+    /*  MAIN  POPULAR SECTION*/
 
   .popular img,
   .popular .backgroundhover{
@@ -376,6 +351,47 @@ h5{
     position: relative;
   }
 
+  /***********************
+          HOVER 
+  ************************/
+
+ 
+  .play{
+    display: none;
+  }
+  .no-play{
+    display: block;
+  }
+  .copertina:hover .play{
+  display: block;
+  }
+  .copertina:hover .no-play{
+    display: none;
+  }
+
+  .icon-text:hover,
+  li:hover{
+    color: white;
+  }
+
+  .crea-playlist:hover .add{
+    background-color: white;
+  }
+
+  #download:hover span,
+  #download:hover img:first-of-type,
+  .icon-text:hover img,
+  #download img:first-of-type:hover,
+  .crea-playlist:hover span
+  {
+    color: white;
+    filter: opacity(100%);
+  }
+
+  
+  
+
+
 /* ****************************
         RESPONSIVE SOLUTIONS 
   *****************************  */
@@ -383,10 +399,8 @@ h5{
   /* TABLET */
   @media screen and (min-width: 576px) {
 
-    .recently .col,
-    .popular .col,
-    .created-for .col{
-        width: calc(100% / 4);
+ main .col{
+        width: calc(100% / 4 - 10px );
       }
 
       nav{
@@ -445,10 +459,8 @@ h5{
   /* DESKTOP */
   @media screen and (min-width: 992px) {
 
-    .recently .col,
-    .popular .col,
-    .created-for .col{
-     width: calc(100% / 6);
+   main .col{
+     width: calc(100% / 6 - 10px);
     }
     
     .menu li{
@@ -456,7 +468,7 @@ h5{
       }
 
     .menu ul{
-        width: 800px;
+        width: 600px;
         margin: 0 auto;
     } 
     
