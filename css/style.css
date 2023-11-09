@@ -8,25 +8,26 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-
 h3, h2, h1{
-  color: white;
+  color:white;
 }
 
 h3{
   font-size:small;
   font-weight: bolder;
 }
+
 h4{
   font-size: xx-small;
 }
 
 h5{
-  color: gray;
   margin-top: 5px;
   font-size: x-small;
 }
-
+h5, h4{
+   color: gray;
+}
 
 /* ****************************
             UTILITY
@@ -56,9 +57,11 @@ h5{
   .margintop-20{
     margin-top: 20px;
   }
+
   .margin10{
     margin:10px 0;
   }
+
   .margleft5{
     margin-left: 5px;
   }
@@ -67,10 +70,9 @@ h5{
     padding: 10px;
   }
 
- 
-
- 
- 
+  .relative{
+    position: relative;;
+  }
 
   /* ****************************
            UPPER SECTION
@@ -96,23 +98,24 @@ h5{
   .text{
   margin-left: 5px;
   vertical-align: middle;
-}
+  }
 
-.icon-text{
-  margin-top: 5px;
-}
+  .icon-text{
+    margin-top: 5px;
+  }
 
-.icons, .user{
-  width: 100%;
-  text-align: center;
-}
+  .icons, .user{
+    width: 100%;
+    text-align: center;
+  }
 
-.logo img:nth-of-type(2){
-  filter: opacity(100%);
-}
-.logo img:nth-of-type(1){
-  filter: opacity(100%);
-}
+  .logo img:nth-of-type(2){
+    filter: opacity(100%);
+  }
+
+  .logo img:nth-of-type(1){
+    filter: opacity(100%);
+  }
 
  nav img {
    width: 25px;
@@ -146,7 +149,6 @@ h5{
     list-style-type: none;
     height: 25vh;
     overflow-y: auto;
-
   }
 
   .icons li{
@@ -159,9 +161,6 @@ h5{
     width: 100%;
   }
 
- 
-  
- 
 
   /* CONTAINER */
   .container{
@@ -171,12 +170,13 @@ h5{
     overflow-y: auto;
   }
 
+
   /* HEADER */
   header .row{
     justify-content: end;
-    align-items: center;
-    
+    align-items: center; 
   }
+
   header{
     width: 100%;
     height: 75px;
@@ -188,28 +188,24 @@ h5{
     border-radius: 40px;
     border-color: white;
     background-color: rgba(240, 255, 255, 0);
-    color: white;
-    
+    color: white; 
   }
 
-
- 
- 
-    
+  
 /* ****************************
         MAIN  
   *****************************  */
   main .row{
     gap: 10px;
- }
+  }
 
- main h3{
-  margin-top: 10px;
- }
+  main h3{
+    margin-top: 10px;
+  }
 
- main img{
-  width: 100%;
-}
+  main img{
+    width: 100%;
+  }
 
   main .col{
   width: calc(100% / 2 - 10px);
@@ -227,8 +223,7 @@ h5{
     display: flex;
     flex-wrap: wrap;
      justify-content: center;  
-     text-align: center;  
-    
+     text-align: center; 
   }
 
   .menu li{
@@ -240,15 +235,6 @@ h5{
     color: grey;
   }
 
-  
-
-
-  .relative{
-    position: relative;;
-  }
-
-  
-
    .backgroundhover{
    display: block;
     background-color: rgba(0, 0, 0, 0.715);
@@ -258,16 +244,12 @@ h5{
     justify-content: center;
     align-items: center;
     width: 100%;
-   height: 100%; 
-    
+   height: 100%;  
    }
 
    .backgroundhover i{
     font-size: 50px;
    }
-
-
-  
 
     /*  MAIN  POPULAR SECTION*/
 
@@ -275,8 +257,6 @@ h5{
   .popular .backgroundhover{
     border-radius: 50%;
   }
-
-
 
    /* ****************************
           FOOTER
@@ -287,7 +267,6 @@ h5{
     background-color: rgb(39, 39, 39);
   }
 
- 
   footer .row{
     justify-content: space-between;
     align-items: center;
@@ -297,7 +276,6 @@ h5{
     align-items: center;
     display: flex;
     align-items: center;
-
   }
 
   footer img{
@@ -309,23 +287,27 @@ h5{
   }
 
   .player i{
-    margin: 10px;
+    margin: 10px 0 10px 10px;
+  }
+
+  .player:nth-of-type(2) i{
+  margin: 15px ;
   }
 
   .player:last-of-type i{
     margin: 5px;
   }
 
-
   .line,
   .volume{
-    display: inline-block;
-    
+    display: inline-block;  
   }
+
  .line #one{
     width: 10vw;
     border: 1px solid white;
   }
+
   .line #two{
     width: 20vw;
   }
@@ -344,27 +326,43 @@ h5{
     height: 15px;
     background-color: white;
     border-radius: 50%;
-   
+    display: none; 
   }
   
   .relative{
     position: relative;
   }
 
+  .player.player:nth-of-type(2) h4{
+    color: white;
+    margin: 5px;
+  }
+
+  .reverse{
+    flex-direction: column-reverse; 
+     display: flex;
+   }
+
+   .preferiti i{
+    color: grey;
+   }
+   
+ 
   /***********************
           HOVER 
-  ************************/
-
- 
+  ************************ */
   .play{
     display: none;
   }
+
   .no-play{
     display: block;
   }
+
   .copertina:hover .play{
   display: block;
   }
+
   .copertina:hover .no-play{
     display: none;
   }
@@ -388,8 +386,29 @@ h5{
     filter: opacity(100%);
   }
 
+  #upgrade:hover{
+    padding:15px 55px;
+  }
+
+  .preferiti i:hover{
+    color: white;
+  }
+ 
+  #time:hover .whitecircle,
+  #volume:hover .whitecircle{
+    display: inline-block;
+  }
+
+  #time:hover #one,
+  #volume:hover #first{
+    border: 2px solid greenyellow;
+  }
+
+  .player:nth-of-type(2) i:hover{
+    font-size: x-large;
+  }
   
-  
+
 
 
 /* ****************************
@@ -399,8 +418,8 @@ h5{
   /* TABLET */
   @media screen and (min-width: 576px) {
 
- main .col{
-        width: calc(100% / 4 - 10px );
+      main .col{
+         width: calc(100% / 4 - 10px );
       }
 
       nav{
@@ -446,13 +465,12 @@ h5{
         vertical-align: middle;
       }
 
-      
-
-    
-      
-        
-       
-    
+      .preferiti{
+        display: inline-block;
+      }
+      .reverse{
+        flex-direction: row; 
+      }
   }
  
 
@@ -471,15 +489,5 @@ h5{
         width: 600px;
         margin: 0 auto;
     } 
-    
+
   }
-
-
-
-
-
-  /* ****************************
-          PROVVISORI CLASS
-  *****************************  */
-
-  

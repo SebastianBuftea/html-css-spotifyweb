@@ -108,7 +108,7 @@
                     </div>
                 </section>
 
-                <!-- RECENTLY SECTION -->
+                <!--  SECTION RECENTLY-->
                 <section class="recently">
                     <div class="main-container pad10 ">
                         <h1>Recently played</h1>
@@ -220,7 +220,7 @@
                     </div>
                 </section>
 
-                <!-- CREATED FOR SECTION -->
+                <!--  SECTION CREATED FOR-->
                 <section class="created-for">
                     <div class="main-container pad10">
                         <h1>Creato per jhon Doe</h1>
@@ -263,7 +263,7 @@
                     </div>    
                 </section>
 
-                <!-- POPULAR SECTION -->
+                <!-- SECTION POPULAR -->
                 <section class="popular">
                     <div class="main-container pad10">
                         <h1>Artisti più popolari</h1>
@@ -314,16 +314,15 @@
     <footer>
         <div class="row pad10">
             <div class="player">
-                    <img src="./spotify/img/sinister.jpeg" alt="">
-                
-                
+                <img src="./spotify/img/sinister.jpeg" alt="">
+                        
                 <span class="margleft5">
                     <h3>Sinister</h3>
                     <h4> Brano Nome</h4>
                 </span>
                 <span class="margleft5">
-                    <div><i class="fa-regular fa-heart fa-xs" style="color: #ffffff;"></i></div>
-                    <div> <i class="fa-regular fa-folder fa-xs" style="color: #ffffff;"></i></div>
+                    <div class="preferiti"><i class="fa-regular fa-heart fa-xs" style=""></i></div>
+                    <div class="preferiti"><i class="fa-regular fa-folder fa-xs" style=""></i></div>
                 </span>
             </div>
             <div class="player">
@@ -334,7 +333,7 @@
                     <i class="fa-solid fa-forward-step fa-lg" style="color: #ffffff;"></i>
                     <i class="fa-solid fa-rotate-right fa-lg" style="color: #ffffff;"></i>
                 </div>
-                <div class="row ">
+                <div class="row " id="time">
                     <h4 >0:25</h4>
                     <div class="line"><hr id="one"></div>
                     <div class="whitecircle" ></div>
@@ -346,14 +345,25 @@
 
             </div>
             <div class="player ">
-                <div class="row">
-                    <i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-desktop fa-xs" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-volume-high fa-2xs" style="color: #ffffff;"></i>
+                <div class="row" id="volume">
+                    <div class=" reverse">
+                        <div>
+                            <i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-desktop fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-volume-high fa-2xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                    
                     <div class="volume"><hr id="first"></div>
                     <div class="whitecircle" ></div>
                     <div class="volume"><hr id="second"></div>
+                    
                 </div>
+                    
             </div>
         </div>
       
